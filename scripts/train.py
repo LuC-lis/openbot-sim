@@ -104,6 +104,8 @@ def main():
     model.fit(ds, epochs=args.epochs, verbose=2)
 
     converter = tf.lite.TFLiteConverter.from_keras_model(model)
+    # dynamic-range quantization -> ~4x smaller, deployment-standard
+    converter.optimizations = [tf.lite.Optimize.DEFAULT]
     open(args.out, "wb").write(converter.convert())
     print("已保存", args.out)
 

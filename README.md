@@ -101,7 +101,7 @@ experiments/     the diagnostic study
 
 demos/           visual demos and teaching scripts
 results/         figures and videos
-models/          final trained policy (dg_s3.tflite)
+models/          final trained policy (dg_s3.tflite, int8-quantized)
 ```
 
 ---
