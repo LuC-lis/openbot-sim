@@ -9,6 +9,7 @@ A from-scratch simulation and imitation-learning pipeline for the
 **behaviour-cloning failure modes** and **sim-to-real transfer**.
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](#)
+[![sister repo](https://img.shields.io/badge/sister%20repo-openbot--sim--statistics-4a6fa5.svg)](https://github.com/LuC-lis/openbot-sim-statistics)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenBot compatible](https://img.shields.io/badge/interface-OpenBot--compatible-success.svg)](#the-interface-contract)
@@ -51,6 +52,12 @@ with the **observation/action interface matched exactly to the real OpenBot
 stack**, so anything trained here is drop-in compatible with the Android app.
 
 It is an **independent, self-directed project**, still in progress.
+
+> The evaluation in this repository is a single run per configuration. The
+> statistical companion, [openbot-sim-statistics](https://github.com/LuC-lis/openbot-sim-statistics),
+> runs the same simulator as a designed experiment: Latin-hypercube conditions,
+> paired seeds across policies, Wilson/bootstrap intervals, permutation tests and
+> a logistic regression on the failure indicator.
 
 ---
 
